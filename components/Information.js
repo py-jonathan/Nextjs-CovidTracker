@@ -9,6 +9,7 @@ export default function Information() {
       <Image
         className={styles.corona_image}
         src="/images/corona.png"
+        alt="corona png image"
         width={200}
         height={200}
       />

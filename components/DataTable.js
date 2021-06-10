@@ -26,7 +26,7 @@ export default function DataTable() {
               <td>
                 <strong>{country.country}</strong>
                 {"   "}
-                <Image src={country.countryInfo.flag} width={30} height={20} />
+                <Image alt={`${country.country}_image`} src={country.countryInfo.flag} width={30} height={20} />
               </td>
               <td>
                 {country.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
