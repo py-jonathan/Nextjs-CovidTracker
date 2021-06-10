@@ -1,0 +1,27 @@
+.country_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.country_data a {
+    margin: 30px 0;
+}
+
+.cases {
+    padding: 15px 0;
+}
+
+.deaths {
+    color: rgb(185, 42, 42);
+}
+
+.recovered {
+    color: rgb(53, 184, 53);
+}
+
+.notfound_country {
+  margin: 200px 0 300px;
+}

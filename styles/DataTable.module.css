@@ -1,9 +1,15 @@
+.country_iso {
+  color: black !important;
+  text-decoration: underline;
+}
+
 @media (max-width: 769px) {
   .responsive_table {
     max-width: 800px;
     margin: auto;
   }
 }
+
 
 @media (min-width: 1174px) {
   .responsive_table {
