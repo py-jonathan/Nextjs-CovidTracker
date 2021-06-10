@@ -21,7 +21,12 @@ export default function CountryData({ data, status }) {
         )}
 
         <div className={styles.country_info}>
-          <Image src={data.countryInfo.flag} width={200} height={100} />
+          <Image
+            src={data.countryInfo.flag}
+            width={200}
+            height={100}
+            alt={`${data.country}_image`}
+          />
           <h2>
             <strong>{data.country}</strong>
           </h2>
