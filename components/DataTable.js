@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import CovidContext from "@/context/CovidContext";
 import styles from "@/styles/DataTable.module.css";
-import "spectre.css/dist/spectre.min.css";
 
 export default function DataTable() {
   const { covidData } = useContext(CovidContext);

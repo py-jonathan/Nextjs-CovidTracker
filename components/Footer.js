@@ -7,7 +7,7 @@ export default function Footer() {
         {new Date().getFullYear()} <sup>&copy;</sup>. {"  "}All rights reserved by COVID
         TRACKER
       </h5>
-      <p>Developer: <a href="https://instagram.com/sajjan_404" target="_blank" className={`btn btn-success ${styles.btn_dev}`}>Sajjan</a></p>
+      {/* <p>Developer: <a href="https://instagram.com/sajjan_404" target="_blank" className={`btn btn-success ${styles.btn_dev}`}>Sajjan</a></p> */}
     </footer>
   );
 }

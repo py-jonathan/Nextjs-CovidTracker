@@ -1,9 +1,11 @@
+import { useContext, useEffect } from "react";
+
 import DataTable from "@/components/DataTable";
 import Footer from "@/components/Footer";
 import Information from "@/components/Information";
 import Layout from "@/components/Layout";
+
 import CovidContext from "@/context/CovidContext";
-import { useContext, useEffect } from "react";
 
 export default function HomePage({ data }) {
   const { covidData, setCovidData } = useContext(CovidContext);
@@ -19,7 +21,7 @@ export default function HomePage({ data }) {
           <DataTable />
         )}
       </div>
-      <Footer />
+      {covidData.length > 0 && <Footer />}
     </Layout>
   );
 }
@@ -30,5 +32,6 @@ export async function getStaticProps() {
 
   return {
     props: { data },
+    revalidate: 1
   };
 }
