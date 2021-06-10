@@ -1,0 +1,25 @@
+.information {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.information h1 {
+  font-weight: bold;
+}
+
+.information p {
+  font-size: 24px;
+}
+
+.corona_image {
+  animation: animate_corona 8s linear infinite;
+}
+
+@keyframes animate_corona {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

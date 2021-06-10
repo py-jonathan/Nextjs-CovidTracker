@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  background-color: #2b4281;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  height: 100px;
+  text-align: center;
+}
+
+.footer h5 {
+    color: white;
+    padding: 25px 0 0 0;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+.btn_dev {
+    background-color: #dd2a7b !important;
+    border: none !important;
+}
+
+@media (max-width: 475px) {
+    .footer h5 {
+        font-size: 15px;
+    }
+}

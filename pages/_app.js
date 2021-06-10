@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import { CovidContextProvider } from "@/context/CovidContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <CovidContextProvider>
+      {" "}
+      <Component {...pageProps} />
+    </CovidContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  background-color: #2b4281;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 50px;
+}
+
+.header a {
+  color: #fff;
+  outline: none;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+
+
+.shadow {
+  -webkit-box-shadow: -1px 15px 12px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 15px 12px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 15px 12px -14px rgba(0, 0, 0, 0.75);
+}

@@ -1,0 +1,13 @@
+@media (max-width: 769px) {
+  .responsive_table {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1174px) {
+  .responsive_table {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
