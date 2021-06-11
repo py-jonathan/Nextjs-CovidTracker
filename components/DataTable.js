@@ -1,11 +1,8 @@
-import { useContext } from "react";
 import Link from "next/link";
 
-import CovidContext from "@/context/CovidContext";
 import styles from "@/styles/DataTable.module.css";
 
-export default function DataTable() {
-  const { covidData } = useContext(CovidContext);
+export default function DataTable({data = []}) {
   return (
     <table
       className={`table table-striped table-hover table-scroll ${styles.responsive_table}`}
@@ -22,7 +19,7 @@ export default function DataTable() {
         </tr>
       </thead>
       <tbody>
-        {covidData.map((country, index) => (
+        {data.map((country, index) => (
           <tr key={index}>
             <td>
               <Link href={`/country/${country.countryInfo.iso3}`}>

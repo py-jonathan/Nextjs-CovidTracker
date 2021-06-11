@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  background-color: #474FFF;
+  background-color: #474fff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -10,25 +10,25 @@
 }
 
 .footer h5 {
-    color: white;
-    padding: 20px 0 0 0;
+  color: white;
+  padding: 20px 0 0 0;
 }
 
 .footer p {
-    color: white;
+  color: white;
 }
 
 .footer a {
-    color: white;
+  color: white;
 }
 
 .btn_dev {
-    background-color: #dd2a7b !important;
-    border: none !important;
+  background-color: #dd2a7b !important;
+  border: none !important;
 }
 
 @media (max-width: 475px) {
-    .footer h5 {
-        font-size: 15px;
-    }
+  .footer h5 {
+    font-size: 15px;
+  }
 }

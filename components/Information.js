@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import styles from "@/styles/Information.module.css";
 
 export default function Information() {
