@@ -39,7 +39,7 @@ export default function HomePage({ data }) {
           <a className="btn btn-primary">See all countries cases</a>
         </Link>
       </div>
-      {covidData.length > 0 && <Footer />}
+      <Footer />
     </Layout>
   );
 }

@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif !important;
+  background-color: #F8F9FA;
 }
 
 a {
@@ -21,4 +22,8 @@ a {
 
 .recovered-text {
   color: rgb(53, 184, 53);
+}
+
+.btn-primary {
+  background-color: #474FFF !important;
 }
