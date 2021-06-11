@@ -11,7 +11,9 @@ export default function Countries({ data }) {
     <Layout title="Countries Cases - Covid Tracker">
       <div className={styles.country_cases}>
         <div className={styles.go_back}>
-          <Link href="/">Go Back</Link>
+          <Link href="/">
+            <a className="btn btn-primary">Go Back</a>
+          </Link>
         </div>
         {data.length === 0 ? (
           <div className="loading loading-lg"></div>
@@ -27,11 +29,13 @@ export default function Countries({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`https://disease.sh/v3/covid-19/countries`);
+  const res = await fetch(
+    `https://disease.sh/v3/covid-19/countries?sort=cases`
+  );
   const data = await res.json();
 
   return {
     props: { data },
-    revalidate: 1,
+    revalidate: 10,
   };
 }

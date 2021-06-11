@@ -17,19 +17,20 @@ a {
   text-transform: uppercase;
 }
 .deaths-text {
-  color: rgb(185, 42, 42);
+  color: #962d2d;
 }
 
 .recovered-text {
-  color: rgb(53, 184, 53);
+  color: rgb(48, 138, 48);
 }
 
 .btn-primary {
-  background-color: #474FFF !important;
+  background-color: #e91e63 !important;
+  border: none !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
-  background-color: #3b43d1 !important;
+  background-color: #c2185b !important;
 }
