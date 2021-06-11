@@ -21,11 +21,11 @@ a {
 }
 
 .recovered-text {
-  color: rgb(48, 138, 48);
+  color: rgb(39, 95, 39);
 }
 
 .btn-primary {
-  background-color: #e91e63 !important;
+  background-color: #961a43 !important;
   border: none !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
