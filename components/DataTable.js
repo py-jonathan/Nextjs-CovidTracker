@@ -33,11 +33,9 @@ export default function DataTable() {
               {country.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </td>
             <td>
-              {" "}
               {country.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </td>
             <td>
-              {" "}
               {country.recovered
                 .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}

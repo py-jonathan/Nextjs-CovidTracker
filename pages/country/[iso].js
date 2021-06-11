@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/Layout";
+
 import styles from "@/styles/CountryData.module.css";
 
 export default function CountryData({ data, status }) {
@@ -26,37 +27,26 @@ export default function CountryData({ data, status }) {
             width={200}
             height={100}
             alt={`${data.country}_image`}
+            className={styles.country_flag}
           />
-          <h2>
-            <strong>{data.country}</strong>
-          </h2>
+          <h2>{data.country}</h2>
 
           <div className={styles.cases}>
             <h3>Total Cases</h3>
             <h4>
-              <strong>
-                {data.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-              </strong>
+              {data.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </h4>
           </div>
           <div className={styles.cases}>
-            <strong>
-              <h3>Total Deaths</h3>
-            </strong>
-            <h4 className={styles.deaths}>
-              <strong>
-                {data.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-              </strong>
+            <h3>Total Deaths</h3>
+            <h4 className="deaths-text">
+              {data.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </h4>
           </div>
           <div className={styles.cases}>
             <h3>Total Recovered</h3>
-            <h4 className={styles.recovered}>
-              <strong>
-                {data.recovered
-                  .toString()
-                  .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-              </strong>
+            <h4 className="recovered-text">
+              {data.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </h4>
           </div>
         </div>

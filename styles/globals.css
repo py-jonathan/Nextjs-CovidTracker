@@ -15,3 +15,10 @@ a {
 .table {
   text-transform: uppercase;
 }
+.deaths-text {
+  color: rgb(185, 42, 42);
+}
+
+.recovered-text {
+  color: rgb(53, 184, 53);
+}

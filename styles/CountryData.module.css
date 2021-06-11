@@ -14,12 +14,8 @@
     padding: 15px 0;
 }
 
-.deaths {
-    color: rgb(185, 42, 42);
-}
-
-.recovered {
-    color: rgb(53, 184, 53);
+.cases h4 {
+  font-weight: bold;
 }
 
 .notfound_country {
