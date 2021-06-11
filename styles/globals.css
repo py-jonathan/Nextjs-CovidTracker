@@ -26,4 +26,10 @@ a {
 
 .btn-primary {
   background-color: #474FFF !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background-color: #3b43d1 !important;
 }

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Link from "next/link";
 
 import Layout from "@/components/Layout";
@@ -9,7 +9,8 @@ import CovidContext from "@/context/CovidContext";
 import styles from "@/styles/Countries.module.css";
 
 export default function Countries() {
-  const { covidData } = useContext(CovidContext);
+  const { covidData, setCovidData } = useContext(CovidContext);
+
   return (
     <Layout title="Countries Cases - Covid Tracker">
       <div className={styles.country_cases}>
