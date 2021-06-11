@@ -9,7 +9,7 @@ export default function CountryData({ data, status }) {
   return (
     <Layout>
       <div className={styles.country_data}>
-        <Link href="/">
+        <Link href="/countries">
           <a href="btn btn-primary">Go Back</a>
         </Link>
 
@@ -21,15 +21,16 @@ export default function CountryData({ data, status }) {
             </Link>
           </div>
         )}
-
         <div className={styles.country_info}>
-          <Image
-            src={data.countryInfo.flag}
-            width={200}
-            height={100}
-            alt={`${data.country}_image`}
-            className={styles.country_flag}
-          />
+
+          <div className={styles.country_image_container}>
+            <Image
+              src={data.countryInfo.flag}
+              alt={`${data.country}_image`}
+              width={250}
+              height={167}
+            />
+          </div>
           <h1>{data.country}</h1>
 
           <div className={styles.cases}>
