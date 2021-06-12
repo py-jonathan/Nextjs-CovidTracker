@@ -1,23 +1,14 @@
-import Footer from "@/components/Footer";
-import Information from "@/components/Information";
 import Layout from "@/components/Layout";
-import WorldWideData from "@/components/WorldWideData";
+import Information from "@/components/Information";
+import Footer from "@/components/Footer";
+import PageLinks from "@/components/PageLinks";
 
 export default function HomePage({ data }) {
   return (
     <Layout title="Home - Covid Tracker">
       <Information />
-      <WorldWideData data={data} />
+      <PageLinks />
       <Footer />
     </Layout>
   );
-}
-export async function getStaticProps() {
-  const res = await fetch(`https://disease.sh/v3/covid-19/all`);
-  const data = await res.json();
-
-  return {
-    props: { data },
-    revalidate: 20,
-  };
 }
