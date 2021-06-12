@@ -20,7 +20,7 @@ export default function CountryData({ data, status }) {
         {status === 200 && (
           <>
             <div className={styles.country_info}>
-              <Link href="/">
+              <Link href="/countries">
                 <a className="btn btn-primary">Go Back</a>
               </Link>
               <div className={styles.country_image_container}>
