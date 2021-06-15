@@ -15,6 +15,11 @@ export default function PageLinks() {
           <a className="btn btn-primary">See all countries cases</a>
         </Link>
       </div>
+      <div className={styles.div}>
+        <Link href="/globalmap">
+          <a className="btn btn-primary">See Map</a>
+        </Link>
+      </div>
     </div>
   );
 }
