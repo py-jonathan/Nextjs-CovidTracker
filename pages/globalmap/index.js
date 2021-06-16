@@ -1,10 +1,10 @@
 import Map from "@/components/Map";
 import styles from "@/styles/GlobalMap.module.css";
 
-export default function Index({ data }) {
+export default function Index({ data, token }) {
   return (
     <div className={styles.map}>
-      <Map data={data} />
+      <Map data={data} token={token} />
     </div>
   );
 }
@@ -14,6 +14,6 @@ export async function getStaticProps() {
   const data = await res.json();
 
   return {
-    props: { data },
+    props: { data, token: process.env.MAPBOX_API_TOKEN },
   };
 }

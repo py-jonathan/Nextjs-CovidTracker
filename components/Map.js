@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 
-export default function Map({ data }) {
+export default function Map({ data, token }) {
   const [selectedLocation, setSelectedLocation] = React.useState({});
   const [viewport, setViewport] = React.useState({
     latitude: 27.700769,
@@ -12,7 +12,7 @@ export default function Map({ data }) {
   return (
     <ReactMapGL
       {...viewport}
-      mapboxApiAccessToken={process.env.MAPBOX_API_TOKEN}
+      mapboxApiAccessToken={token}
       width="100%"
       height="100%"
       onViewportChange={(viewport) => setViewport(viewport)}
