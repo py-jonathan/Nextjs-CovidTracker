@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import styles from '@/styles/Map.module.css';
 
 export default function Map({ data, token }) {
   const [selectedLocation, setSelectedLocation] = React.useState({});
@@ -41,46 +42,47 @@ export default function Map({ data, token }) {
               onClose={() => setSelectedLocation({})}
               closeOnClick={true}
               latitude={country.countryInfo.lat - 0.25}
-              longitude={country.countryInfo.long - 0.50}
+              longitude={country.countryInfo.long - 0.5}
+              className={styles.popup}
             >
-              <p className="text-center">{country.country}</p>
-              <Image
-                src={`${country.countryInfo.flag}`}
-                width={150}
-                height={67}
-              />
-              <p>
-                Cases:{" "}
-                <span>
-                  {country.cases
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </span>
-              </p>
-              <p>
-                Deaths:{" "}
-                <span className="deaths-text">
-                  {country.deaths
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </span>
-              </p>
-              <p>
-                Recovered:{" "}
-                <span className="recovered-text">
-                  {country.recovered
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </span>
-              </p>
-              <p>
-                Active:{" "}
-                <span>
-                  {country.active
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </span>
-              </p>
+                <p className={`text-center ${styles.country_name}`}>{country.country}</p>
+                <Image
+                  src={`${country.countryInfo.flag}`}
+                  width={150}
+                  height={67}
+                />
+                <p>
+                  Cases:{" "}
+                  <span>
+                    {country.cases
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  </span>
+                </p>
+                <p>
+                  Deaths:{" "}
+                  <span className="deaths-text">
+                    {country.deaths
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  </span>
+                </p>
+                <p>
+                  Recovered:{" "}
+                  <span className="recovered-text">
+                    {country.recovered
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  </span>
+                </p>
+                <p>
+                  Active:{" "}
+                  <span>
+                    {country.active
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  </span>
+                </p>
             </Popup>
           ) : (
             false

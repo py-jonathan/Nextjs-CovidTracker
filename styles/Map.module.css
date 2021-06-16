@@ -1,0 +1,8 @@
+.popup {
+    position: relative;
+    z-index: 99999;
+}
+
+.country_name {
+    font-weight: bold;
+}
