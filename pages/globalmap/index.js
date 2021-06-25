@@ -15,5 +15,6 @@ export async function getStaticProps() {
 
   return {
     props: { data, token: process.env.MAPBOX_API_TOKEN },
+    revalidate: 20
   };
 }
